@@ -1,0 +1,33 @@
+.Item {
+	position: relative;
+	margin-bottom: 30px;
+	padding: 10px 150px 10px 10px;
+	border-bottom: 1px dotted #bbb;
+	overflow: hidden;
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+
+.Item:hover .check,
+.Item:hover .remove {
+	opacity: 0.5;
+}
+
+.Item:last-child {
+	margin-bottom: 0;
+}
+
+.Item .text {
+	overflow: hidden;
+}
+
+.Item .remove {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	border-radius: 10px;
+	background: none;
+	font-size: 15px;
+	opacity: 0;
+}
