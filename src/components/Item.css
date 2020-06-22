@@ -8,11 +8,6 @@
 	cursor: pointer;
 }
 
-.Item:hover .check,
-.Item:hover .remove {
-	opacity: 0.5;
-}
-
 .Item:last-child {
 	margin-bottom: 0;
 }
@@ -21,13 +16,22 @@
 	overflow: hidden;
 }
 
+.Item .remove:hover,
+.Item .remove:focus {
+	background-color: #2f332f;
+	color: #fff;
+	opacity: 1;
+}
+
 .Item .remove {
 	position: absolute;
 	top: 50%;
 	right: 10px;
 	transform: translateY(-50%);
+	border: 1px solid #2f332f;
 	border-radius: 10px;
 	background: none;
 	font-size: 15px;
-	opacity: 0;
+	letter-spacing: -0.5px;
+	opacity: 0.5;
 }

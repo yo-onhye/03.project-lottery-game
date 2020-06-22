@@ -9,9 +9,9 @@ class App extends Component {
 
 	state = {
 		infos: [],
-		randomInfo: [],
-		randomIndex: [],
+		randomResult: [],
 		random: null,
+		isResultShow: false,
 	};
 
 	handleInfoInsert = (text) => {
@@ -36,11 +36,44 @@ class App extends Component {
 		});
 	};
 
+	handlePlayLottery = () => {
+		const { infos, random, randomResult, isResultShow } = this.state;
+
+		function randomPickItem(arr) {
+			// 랜덤 뽑기 함수
+			return arr[Math.floor(Math.random() * arr.length)];
+		}
+
+		for (var i = 0; i < random; i++) {
+			var temp = 0;
+
+			do temp = randomPickItem(infos);
+			while (randomResult.indexOf(temp) !== -1);
+			randomResult.push(temp);
+		}
+
+		this.setState({
+			isResultShow: !isResultShow,
+		});
+
+		console.log(randomResult);
+	};
+
 	render() {
 		return (
 			<div className='App'>
 				<h3>Random 추첨기</h3>
-				<Form random={this.state.random} onInsert={this.handleInfoInsert} onSet={this.handleRandomInsert} onPlay={this.handlePlayRandom} />
+				<Form random={this.state.random} onInsert={this.handleInfoInsert} onSet={this.handleRandomInsert} onPlay={this.handlePlayLottery} />
+				{this.state.isResultShow && (
+					<div className='Random-result'>
+						<strong>당첨 결과</strong>
+						<ul>
+							{this.state.randomResult.map((item, index) => {
+								return <li key={index}>{item.text}</li>;
+							})}
+						</ul>
+					</div>
+				)}
 				<List infos={this.state.infos} onDelete={this.handleDelte} />
 			</div>
 		);

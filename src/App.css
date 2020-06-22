@@ -13,3 +13,25 @@
 	text-align: center;
 	color: #eee;
 }
+
+.Random-result {
+	display: block;
+	width: 80%;
+	margin: 20px auto ;
+	padding: 20px;
+	border: 1px solid #bbb;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.Random-result strong {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.Random-result ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
