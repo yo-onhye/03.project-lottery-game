@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./App.css";
-
 import Form from "./components/Form";
 import List from "./components/List";
 
@@ -40,7 +39,6 @@ class App extends Component {
 		const { infos, random, randomResult, isResultShow } = this.state;
 
 		function randomPickItem(arr) {
-			// 랜덤 뽑기 함수
 			return arr[Math.floor(Math.random() * arr.length)];
 		}
 
