@@ -42,19 +42,17 @@ class Form extends Component {
 	};
 
 	render() {
-		const { info, random } = this.state;
-
 		return (
 			<div className="Form">
 				<form className="form_container">
 					<div className="form_item">
 						<strong>추첨자 추가</strong>
-						<input type="text" value={info} name="info" onChange={this.handleChange} />
+						<input type="text" value={ithis.state.nfo} name="info" onChange={this.handleChange} />
 						<button type="button" onClick={this.handleSubmitContents}>추가</button>
 					</div>
 					<div className="form_item">
 						<strong>총 추첨할 인원 수</strong>
-						<input type="number" value={random} name="random" onChange={this.handleChange} />
+						<input type="number" value={this.state.random} name="random" onChange={this.handleChange} />
 						<button type="button" onClick={this.handleSubmitRandom}>추가</button>
 					</div>
 					<button type="button" className="form_play_btn" onClick={this.props.onPlay}>추첨하기</button>
