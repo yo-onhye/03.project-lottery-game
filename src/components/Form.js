@@ -47,7 +47,7 @@ class Form extends Component {
 				<form className="form_container">
 					<div className="form_item">
 						<strong>추첨자 추가</strong>
-						<input type="text" value={ithis.state.nfo} name="info" onChange={this.handleChange} />
+						<input type="text" value={this.state.info} name="info" onChange={this.handleChange} />
 						<button type="button" onClick={this.handleSubmitContents}>추가</button>
 					</div>
 					<div className="form_item">
