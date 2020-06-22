@@ -42,6 +42,12 @@ class App extends Component {
 			return arr[Math.floor(Math.random() * arr.length)];
 		}
 
+		if (randomResult.length > random-1) {
+			this.setState({
+				randomResult: [],
+			});
+			console.log('실행되지마');
+		}
 		for (var i = 0; i < random; i++) {
 			var temp = 0;
 
@@ -49,10 +55,13 @@ class App extends Component {
 			while (randomResult.indexOf(temp) !== -1);
 			randomResult.push(temp);
 		}
-
+		
 		this.setState({
-			isResultShow: !isResultShow,
+			isResultShow: true,
 		});
+
+		console.log(randomResult);
+		console.log(randomResult.length);
 	};
 
 	render() {
