@@ -55,8 +55,6 @@ class App extends Component {
 		this.setState({
 			isResultShow: !isResultShow,
 		});
-
-		console.log(randomResult);
 	};
 
 	render() {
