@@ -7,10 +7,10 @@ class App extends Component {
 	id = 1;
 
 	state = {
-		infos: [],
-		randomResult: [],
-		random: null,
-		isResultShow: false,
+		infos: [], // 추첨자 오브젝트
+		randomResult: [], // 추첨자 배열 복사
+		random: null, // 추첨할 인원 수
+		isResultShow: false, // 노출 유무
 	};
 
 	handleInfoInsert = (text) => {
@@ -24,9 +24,12 @@ class App extends Component {
 	};
 
 	handleRandomInsert = (number) => {
-		this.setState({
-			random: number,
-		});
+		const { infos } = this.state;
+		if (number < infos.length) {
+			this.setState({
+				random: number,
+			});
+		}
 	};
 
 	handleDelte = (id) => {
@@ -42,12 +45,6 @@ class App extends Component {
 			return arr[Math.floor(Math.random() * arr.length)];
 		}
 
-		if (randomResult.length > random-1) {
-			this.setState({
-				randomResult: [],
-			});
-			console.log('실행되지마');
-		}
 		for (var i = 0; i < random; i++) {
 			var temp = 0;
 
@@ -55,13 +52,26 @@ class App extends Component {
 			while (randomResult.indexOf(temp) !== -1);
 			randomResult.push(temp);
 		}
-		
+
 		this.setState({
 			isResultShow: true,
 		});
 
-		console.log(randomResult);
 		console.log(randomResult.length);
+		console.log(isResultShow);
+	};
+
+	handlePopupClose = (e) => {
+		e.preventDefault();
+
+		const { randomResult } = this.state;
+
+		if (randomResult.length > 0) {
+			this.setState({
+				randomResult: [],
+				isResultShow: false,
+			});
+		}
 	};
 
 	render() {
@@ -69,16 +79,19 @@ class App extends Component {
 			<div className='App'>
 				<h3>Random 추첨기</h3>
 				<Form random={this.state.random} onInsert={this.handleInfoInsert} onSet={this.handleRandomInsert} onPlay={this.handlePlayLottery} />
-				{this.state.isResultShow && (
-					<div className='Random-result'>
+				<div className={`Random-result-popup ${this.state.isResultShow && "show"}`}>
+					<div className='Random-result-inner'>
 						<strong>당첨 결과</strong>
 						<ul>
 							{this.state.randomResult.map((item, index) => {
 								return <li key={index}>{item.text}</li>;
 							})}
 						</ul>
+						<button type='button' className='Random-result-close' onClick={this.handlePopupClose}>
+							<span className='blind'>팝업 닫기</span>
+						</button>
 					</div>
-				)}
+				</div>
 				<List infos={this.state.infos} onDelete={this.handleDelte} />
 			</div>
 		);
