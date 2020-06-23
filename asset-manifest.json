@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/03.personal-toyproject/project-random-select/static/css/main.74106f5d.chunk.css",
+    "main.js": "/03.personal-toyproject/project-random-select/static/js/main.67d06b8e.chunk.js",
+    "main.js.map": "/03.personal-toyproject/project-random-select/static/js/main.67d06b8e.chunk.js.map",
+    "runtime-main.js": "/03.personal-toyproject/project-random-select/static/js/runtime-main.847fcbc6.js",
+    "runtime-main.js.map": "/03.personal-toyproject/project-random-select/static/js/runtime-main.847fcbc6.js.map",
+    "static/js/2.4921678d.chunk.js": "/03.personal-toyproject/project-random-select/static/js/2.4921678d.chunk.js",
+    "static/js/2.4921678d.chunk.js.map": "/03.personal-toyproject/project-random-select/static/js/2.4921678d.chunk.js.map",
+    "index.html": "/03.personal-toyproject/project-random-select/index.html",
+    "precache-manifest.112680dc186a40c514c75e2b1d8f5170.js": "/03.personal-toyproject/project-random-select/precache-manifest.112680dc186a40c514c75e2b1d8f5170.js",
+    "service-worker.js": "/03.personal-toyproject/project-random-select/service-worker.js",
+    "static/css/main.74106f5d.chunk.css.map": "/03.personal-toyproject/project-random-select/static/css/main.74106f5d.chunk.css.map",
+    "static/js/2.4921678d.chunk.js.LICENSE.txt": "/03.personal-toyproject/project-random-select/static/js/2.4921678d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.847fcbc6.js",
+    "static/js/2.4921678d.chunk.js",
+    "static/css/main.74106f5d.chunk.css",
+    "static/js/main.67d06b8e.chunk.js"
+  ]
+}
