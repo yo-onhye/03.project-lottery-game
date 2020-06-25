@@ -30,9 +30,10 @@ class Form extends Component {
 
 	handleSubmitRandom = (e) => {
 		e.preventDefault();
-
 		if(this.state.random === "") {
 			alert('입력 창에 추첨 개수를 입력해주세요');
+		} else if (this.state.random === "0") {
+			alert('0보다 큰 숫자를 입력해주세요');
 		} else {
 			this.props.onSet(this.state.random);
 			this.setState({

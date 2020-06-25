@@ -9,7 +9,7 @@ class App extends Component {
 	state = {
 		infos: [], // 추첨 아이템 오브젝트
 		randomResult: [], // 추첨 아이템 배열 복사
-		random: null, // 추첨할 경우의 수
+		random: null, // 추첨 개 수
 		isResultShow: false, // 노출 유무
 	};
 
@@ -39,26 +39,31 @@ class App extends Component {
 	};
 
 	handlePlayLottery = () => {
-		const { infos, random, randomResult, isResultShow } = this.state;
+		const { infos, random, randomResult } = this.state;
 
 		function randomPickItem(arr) {
 			return arr[Math.floor(Math.random() * arr.length)];
 		}
 
-		for (var i = 0; i < random; i++) {
-			var temp = 0;
+		if (infos.length > random) {
+			if (random == null) {
+				alert("추첨 개수를 확인해주세요:D");
+			} else {
+				for (var i = 0; i < random; i++) {
+					var temp = 0;
 
-			do temp = randomPickItem(infos);
-			while (randomResult.indexOf(temp) !== -1);
-			randomResult.push(temp);
+					do temp = randomPickItem(infos);
+					while (randomResult.indexOf(temp) !== -1);
+					randomResult.push(temp);
+				}
+
+				this.setState({
+					isResultShow: true,
+				});
+			}
+		} else {
+			alert("추첨 아이템과 추첨 개수를 확인해주세요:D");
 		}
-
-		this.setState({
-			isResultShow: true,
-		});
-
-		console.log(randomResult.length);
-		console.log(isResultShow);
 	};
 
 	handlePopupClose = (e) => {
@@ -69,9 +74,11 @@ class App extends Component {
 		if (randomResult.length > 0) {
 			this.setState({
 				randomResult: [],
-				isResultShow: false,
 			});
 		}
+		this.setState({
+			isResultShow: false,
+		});
 	};
 
 	render() {

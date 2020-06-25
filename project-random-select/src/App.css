@@ -1,17 +1,3 @@
-.blind {
-	overflow: hidden;
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
-	line-height: 0;
-	white-space: normal;
-	word-wrap: break-word;
-	word-break: break-all;
-	clip: rect(0, 0, 0, 0);
-}
 .blind,
 legend {
 	overflow: hidden;
@@ -107,6 +93,13 @@ legend {
 	font-size: 20px;
 	line-height: 30px;
 	list-style: none;
+}
+
+.Random-result-popup li {
+	overflow: hidden;
+	max-width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .Random-result-close {
