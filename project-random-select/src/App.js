@@ -7,9 +7,9 @@ class App extends Component {
 	id = 1;
 
 	state = {
-		infos: [], // 추첨자 오브젝트
-		randomResult: [], // 추첨자 배열 복사
-		random: null, // 추첨할 인원 수
+		infos: [], // 추첨 아이템 오브젝트
+		randomResult: [], // 추첨 아이템 배열 복사
+		random: null, // 추첨할 경우의 수
 		isResultShow: false, // 노출 유무
 	};
 

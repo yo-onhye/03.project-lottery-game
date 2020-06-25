@@ -19,7 +19,7 @@ class Form extends Component {
 		e.preventDefault();
 
 		if(this.state.info === "") {
-			alert('입력 창에 추첨자를 입력해주세요');
+			alert('입력 창에 추첨 아이템을 입력해주세요');
 		} else {
 			this.props.onInsert(this.state.info);
 			this.setState({
@@ -32,7 +32,7 @@ class Form extends Component {
 		e.preventDefault();
 
 		if(this.state.random === "") {
-			alert('입력 창에 추첨 인원를 입력해주세요');
+			alert('입력 창에 추첨 개수를 입력해주세요');
 		} else {
 			this.props.onSet(this.state.random);
 			this.setState({
@@ -46,12 +46,12 @@ class Form extends Component {
 			<div className="Form">
 				<form className="form_container">
 					<div className="form_item">
-						<strong>추첨자 추가</strong>
+						<strong>추첨 아이템 추가</strong>
 						<input type="text" value={this.state.info} name="info" onChange={this.handleChange} />
 						<button type="button" onClick={this.handleSubmitContents}>추가</button>
 					</div>
 					<div className="form_item">
-						<strong>총 추첨할 인원 수</strong>
+						<strong>총 추첨 개수</strong>
 						<input type="number" value={this.state.random} name="random" onChange={this.handleChange} />
 						<button type="button" onClick={this.handleSubmitRandom}>추가</button>
 					</div>
