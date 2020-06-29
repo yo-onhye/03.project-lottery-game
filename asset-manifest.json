@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/03.personal-toyproject/static/css/main.f6c36708.chunk.css",
-    "main.js": "/03.personal-toyproject/static/js/main.027be029.chunk.js",
-    "main.js.map": "/03.personal-toyproject/static/js/main.027be029.chunk.js.map",
-    "runtime-main.js": "/03.personal-toyproject/static/js/runtime-main.73fc78ce.js",
-    "runtime-main.js.map": "/03.personal-toyproject/static/js/runtime-main.73fc78ce.js.map",
-    "static/js/2.4921678d.chunk.js": "/03.personal-toyproject/static/js/2.4921678d.chunk.js",
-    "static/js/2.4921678d.chunk.js.map": "/03.personal-toyproject/static/js/2.4921678d.chunk.js.map",
-    "index.html": "/03.personal-toyproject/index.html",
-    "precache-manifest.d8f9f03649fb4b9a319935432b8eb75a.js": "/03.personal-toyproject/precache-manifest.d8f9f03649fb4b9a319935432b8eb75a.js",
-    "service-worker.js": "/03.personal-toyproject/service-worker.js",
-    "static/css/main.f6c36708.chunk.css.map": "/03.personal-toyproject/static/css/main.f6c36708.chunk.css.map",
-    "static/js/2.4921678d.chunk.js.LICENSE.txt": "/03.personal-toyproject/static/js/2.4921678d.chunk.js.LICENSE.txt"
+    "main.css": "/03.project-lottery-game/static/css/main.f6c36708.chunk.css",
+    "main.js": "/03.project-lottery-game/static/js/main.78453937.chunk.js",
+    "main.js.map": "/03.project-lottery-game/static/js/main.78453937.chunk.js.map",
+    "runtime-main.js": "/03.project-lottery-game/static/js/runtime-main.cb68626e.js",
+    "runtime-main.js.map": "/03.project-lottery-game/static/js/runtime-main.cb68626e.js.map",
+    "static/js/2.4921678d.chunk.js": "/03.project-lottery-game/static/js/2.4921678d.chunk.js",
+    "static/js/2.4921678d.chunk.js.map": "/03.project-lottery-game/static/js/2.4921678d.chunk.js.map",
+    "index.html": "/03.project-lottery-game/index.html",
+    "precache-manifest.a1c88356faa446df02d8184ce45afdf9.js": "/03.project-lottery-game/precache-manifest.a1c88356faa446df02d8184ce45afdf9.js",
+    "service-worker.js": "/03.project-lottery-game/service-worker.js",
+    "static/css/main.f6c36708.chunk.css.map": "/03.project-lottery-game/static/css/main.f6c36708.chunk.css.map",
+    "static/js/2.4921678d.chunk.js.LICENSE.txt": "/03.project-lottery-game/static/js/2.4921678d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.73fc78ce.js",
+    "static/js/runtime-main.cb68626e.js",
     "static/js/2.4921678d.chunk.js",
     "static/css/main.f6c36708.chunk.css",
-    "static/js/main.027be029.chunk.js"
+    "static/js/main.78453937.chunk.js"
   ]
 }
