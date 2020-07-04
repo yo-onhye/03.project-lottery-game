@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, createRef } from "react";
 import "./Form.css";
 
 class Form extends Component {
@@ -6,6 +6,9 @@ class Form extends Component {
 		info: "",
 		random: "",
 	};
+
+	infoInput = createRef();
+	randomInput = createRef();
 
 	handleChange = (e) => {
 		const { value, name } = e.target;
@@ -26,6 +29,7 @@ class Form extends Component {
 				info: "",
 			});
 		}
+		this.infoInput.current.focus();
 	};
 
 	handleSubmitRandom = (e) => {
@@ -40,6 +44,7 @@ class Form extends Component {
 				random: "",
 			});
 		}
+		this.randomInput.current.focus();
 	};
 
 	render() {
@@ -48,12 +53,12 @@ class Form extends Component {
 				<form className="form_container">
 					<div className="form_item">
 						<strong>추첨 아이템 추가</strong>
-						<input type="text" value={this.state.info} name="info" onChange={this.handleChange} />
+						<input type="text" value={this.state.info} name="info" onChange={this.handleChange} ref={this.infoInput} />
 						<button type="button" onClick={this.handleSubmitContents}>추가</button>
 					</div>
 					<div className="form_item">
 						<strong>총 추첨 개수</strong>
-						<input type="number" value={this.state.random} name="random" onChange={this.handleChange} />
+						<input type="number" value={this.state.random} name="random" onChange={this.handleChange} ref={this.randomInput} />
 						<button type="button" onClick={this.handleSubmitRandom}>추가</button>
 					</div>
 					<button type="button" className="form_play_btn" onClick={this.props.onPlay}>추첨하기</button>
