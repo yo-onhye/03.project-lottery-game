@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7fc4a707fed446321a3c5febba70ab4e",
+    "revision": "07e69e9ac8dc6afb2104a3dd1155f59c",
     "url": "/03.project-lottery-game/index.html"
   },
   {
-    "revision": "bf67e5f46aa4af125412",
+    "revision": "966e29ba13e26ba9d93b",
     "url": "/03.project-lottery-game/static/css/main.f6c36708.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/03.project-lottery-game/static/js/2.4921678d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bf67e5f46aa4af125412",
-    "url": "/03.project-lottery-game/static/js/main.78453937.chunk.js"
+    "revision": "966e29ba13e26ba9d93b",
+    "url": "/03.project-lottery-game/static/js/main.579fa60e.chunk.js"
   },
   {
     "revision": "68af9a5ab00bee0fe86c",

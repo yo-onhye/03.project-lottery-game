@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/03.project-lottery-game/static/css/main.f6c36708.chunk.css",
-    "main.js": "/03.project-lottery-game/static/js/main.78453937.chunk.js",
-    "main.js.map": "/03.project-lottery-game/static/js/main.78453937.chunk.js.map",
+    "main.js": "/03.project-lottery-game/static/js/main.579fa60e.chunk.js",
+    "main.js.map": "/03.project-lottery-game/static/js/main.579fa60e.chunk.js.map",
     "runtime-main.js": "/03.project-lottery-game/static/js/runtime-main.cb68626e.js",
     "runtime-main.js.map": "/03.project-lottery-game/static/js/runtime-main.cb68626e.js.map",
     "static/js/2.4921678d.chunk.js": "/03.project-lottery-game/static/js/2.4921678d.chunk.js",
     "static/js/2.4921678d.chunk.js.map": "/03.project-lottery-game/static/js/2.4921678d.chunk.js.map",
     "index.html": "/03.project-lottery-game/index.html",
-    "precache-manifest.a1c88356faa446df02d8184ce45afdf9.js": "/03.project-lottery-game/precache-manifest.a1c88356faa446df02d8184ce45afdf9.js",
+    "precache-manifest.7020933648cee3b9506bb34b8b545b53.js": "/03.project-lottery-game/precache-manifest.7020933648cee3b9506bb34b8b545b53.js",
     "service-worker.js": "/03.project-lottery-game/service-worker.js",
     "static/css/main.f6c36708.chunk.css.map": "/03.project-lottery-game/static/css/main.f6c36708.chunk.css.map",
     "static/js/2.4921678d.chunk.js.LICENSE.txt": "/03.project-lottery-game/static/js/2.4921678d.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.cb68626e.js",
     "static/js/2.4921678d.chunk.js",
     "static/css/main.f6c36708.chunk.css",
-    "static/js/main.78453937.chunk.js"
+    "static/js/main.579fa60e.chunk.js"
   ]
 }
