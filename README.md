@@ -11,4 +11,4 @@
 React, JQuery, Css
 
 ## Link
-https://yo-onhye.github.io/03.personal-toyproject/
+[https://yo-onhye.github.io/03.project-lottery-game/](https://yo-onhye.github.io/03.project-lottery-game/)
